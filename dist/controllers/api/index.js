@@ -14,7 +14,7 @@ const express = __importStar(require("express"));
 const accounts_1 = __importDefault(require("./accounts"));
 const quizzes_1 = __importDefault(require("./quizzes"));
 let controller = express.Router();
-controller.use('/accounts', accounts_1.default);
 controller.use('/quizzes', quizzes_1.default);
+controller.use('/accounts', accounts_1.default);
 exports.default = controller;
 //# sourceMappingURL=index.js.map

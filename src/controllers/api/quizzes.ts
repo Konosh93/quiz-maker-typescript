@@ -1,3 +1,5 @@
+///<reference path="./types/index.ts"/>
+
 import * as express from 'express';
 import apiTypes from './types';
 

@@ -4,7 +4,8 @@ import quizzesController from './quizzes';
 
 let controller = express.Router();
 
-controller.use('/accounts', accountsController);
 controller.use('/quizzes', quizzesController);
+controller.use('/accounts', accountsController);
+
 
 export default controller;
