@@ -1,0 +1,36 @@
+{
+  "name": "quiz-maker-app-typescript",
+  "version": "1.0.0",
+  "description": "node project written in Typescript",
+  "main": "server.js",
+  "scripts": {
+    "watch-ts": "tsc -w",
+    "serve": "nodemon dist\\server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.0",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.7",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.20",
+    "@types/body-parser": "^1.16.8",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/cors": "^2.8.3",
+    "@types/dotenv": "^4.0.2",
+    "@types/errorhandler": "0.0.32",
+    "@types/express": "^4.11.1",
+    "@types/mongoose": "^5.0.2",
+    "@types/morgan": "^1.7.35",
+    "@types/passport": "^0.4.3"
+  }
+}
