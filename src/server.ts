@@ -4,7 +4,7 @@ import errorHandler from 'errorhandler';
 /*
 	Some dummy route for testing
 */
-app.get('/*?', (req, res, next) => { res.status(200).json({message: "Thanks, it's working"}); return res.end();})
+
 
 /*
 	This middleware should be the last to handle errors

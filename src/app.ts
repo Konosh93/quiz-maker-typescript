@@ -8,6 +8,8 @@ import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
 import bluebird from 'bluebird';
 
+import apiController from './controllers/api';
+
 
 /* 
    Setting up the database connection 
@@ -45,6 +47,9 @@ app.use(bodyParser.json());
 app.use(cookieParser())
 app.use(express.static(__dirname + '/build'));
 
+
+app.get('/$', (req, res, next) => { res.status(200).json({message: "Thanks, it's working"}); return res.end();})
+app.use('/api', apiController);
 /*
    Export the app to be served
 */

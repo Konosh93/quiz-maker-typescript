@@ -11,6 +11,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const bluebird_1 = __importDefault(require("bluebird"));
+const api_1 = __importDefault(require("./controllers/api"));
 /*
    Setting up the database connection
    My original JS code use a strange &
@@ -43,6 +44,8 @@ app.use(body_parser_1.default.urlencoded({ extended: false }));
 app.use(body_parser_1.default.json());
 app.use(cookie_parser_1.default());
 app.use(express_1.default.static(__dirname + '/build'));
+app.get('/$', (req, res, next) => { res.status(200).json({ message: "Thanks, it's working" }); return res.end(); });
+app.use('/api', api_1.default);
 /*
    Export the app to be served
 */

@@ -8,7 +8,6 @@ const errorhandler_1 = __importDefault(require("errorhandler"));
 /*
     Some dummy route for testing
 */
-app_1.default.get('/*?', (req, res, next) => { res.status(200).json({ message: "Thanks, it's working" }); return res.end(); });
 /*
     This middleware should be the last to handle errors
 */
